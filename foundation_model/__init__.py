@@ -1,6 +1,8 @@
 import h5py
 import numpy as np
 import json
+import importlib.resources
+import pathlib
 
 class DenseLayer:
     def __init__(self, group):
@@ -167,3 +169,7 @@ def load(file_path):
         print(f"Example diff per element: {diff}")
         assert diff < 1e-6, "Output is not close enough to target output"
         return model
+
+
+def load_quadrotor():
+    return load(importlib.resources.files().joinpath("blob", "checkpoint.h5"))

@@ -16,3 +16,6 @@ dependencies = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["foundation_model"]
+include = [
+    "foundation_model/blob/*.h5",
+]

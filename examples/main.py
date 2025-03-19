@@ -1,5 +1,5 @@
-from foundation_model import load
+from foundation_model import load_quadrotor
 
 
 
-load("blob/checkpoint.h5")
+quadrotor = load_quadrotor()
