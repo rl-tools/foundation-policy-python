@@ -101,6 +101,9 @@ class SampleAndSquashLayer:
     def evaluate(self, input_data):
         mean = input_data[..., :input_data.shape[-1] // 2]
         return np.tanh(mean)
+    
+    def evaluate_step(self, input_data):
+        return self.evaluate(input_data)
 
 class MLP:
     def __init__(self, group):
@@ -119,6 +122,9 @@ class MLP:
         for layer in self.hidden_layers:
             current = layer.evaluate(current)
         return self.output_layer.evaluate(current)
+    
+    def evaluate_step(self, input_data):
+        return self.evaluate(input_data)
 
 class Sequential:
     def __init__(self, group):
@@ -139,6 +145,12 @@ class Sequential:
         current = input_data
         for layer in self.layers:
             current = layer.evaluate(current)
+        return current
+    
+    def evaluate_step(self, input_data):
+        current = input_data
+        for layer in self.layers:
+            current = layer.evaluate_step(current)
         return current
 
 def layer_dispatch(group):

@@ -15,6 +15,12 @@ dependencies = [
     "importlib_resources" # to support importlib.resources.files() on Python < 3.9
 ]
 
+[project.optional-dependencies]
+examples = [
+    "scipy",
+    "l2f"
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["foundation_model"]
 include = [
