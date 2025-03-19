@@ -4,18 +4,20 @@ build-backend = "hatchling.build"
 
 [project]
 name = "foundation-model"
-version = "0.0.4"
+version = "0.0.7"
 description = "A foundation model for continuous control"
 readme = "README.md"
 authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]
 license = {text = "MIT"}
 dependencies = [
     "numpy",
-    "h5py"
+    "h5py",
+    "importlib_resources" # to support importlib.resources.files() on Python < 3.9
 ]
 
 [tool.hatch.build.targets.wheel]
 packages = ["foundation_model"]
 include = [
     "foundation_model/blob/*.h5",
+    "foundation_model/examples/*",
 ]

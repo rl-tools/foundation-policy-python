@@ -1,7 +1,7 @@
 import h5py
 import numpy as np
 import json
-import importlib.resources
+import importlib_resources
 import pathlib
 
 class DenseLayer:
@@ -172,4 +172,4 @@ def load(file_path):
 
 
 def load_quadrotor():
-    return load(importlib.resources.files().joinpath("blob", "checkpoint.h5"))
+    return load(importlib_resources.files("foundation_model").joinpath("blob", "checkpoint.h5"))
