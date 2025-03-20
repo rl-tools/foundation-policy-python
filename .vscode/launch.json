@@ -7,6 +7,13 @@
             "request": "launch",
             "program": "foundation_model/examples/main.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "example: ui",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "foundation_model.examples.ui",
+            "console": "integratedTerminal"
         }
     ]
 }

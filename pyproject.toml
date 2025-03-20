@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "foundation-model"
-version = "0.0.7"
+version = "0.0.8"
 description = "A foundation model for continuous control"
 readme = "README.md"
 authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]
@@ -18,7 +18,8 @@ dependencies = [
 [project.optional-dependencies]
 examples = [
     "scipy",
-    "l2f"
+    "l2f",
+    "websockets"
 ]
 
 [tool.hatch.build.targets.wheel]
