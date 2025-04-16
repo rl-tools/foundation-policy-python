@@ -1,13 +1,11 @@
-from foundation_model import load_quadrotor
+from foundation_model import Quadrotor
 import numpy as np
 from scipy.spatial.transform import Rotation as R
 import l2f
 import os
 from  copy import copy
 
-quadrotor = load_quadrotor()
-
-
+quadrotor = Quadrotor()
 
 position = [0, 0, 0]
 orientation = [1, 0, 0, 0]
