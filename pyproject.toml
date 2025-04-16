@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "foundation-model"
-version = "0.0.9"
+version = "0.0.10"
 description = "A foundation model for continuous control"
 readme = "README.md"
 authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]

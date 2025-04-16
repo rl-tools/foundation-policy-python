@@ -178,7 +178,6 @@ def load(file_path):
         target_output = f['example']['output'][()]
         output = model.evaluate(input_data)
         diff = np.abs(output - target_output).mean()
-        print(f"Example diff per element: {diff}")
         assert diff < 1e-6, "Output is not close enough to target output"
         return model
 
