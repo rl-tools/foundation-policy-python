@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "foundation-policy"
-version = "0.0.14"
+version = "1.0.0"
 description = "A foundation policy for quadrotor control"
 readme = "README.md"
 authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]
