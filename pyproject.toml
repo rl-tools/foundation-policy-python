@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "foundation-model"
-version = "0.0.13"
-description = "A foundation model for continuous control"
+name = "foundation-policy"
+version = "0.0.14"
+description = "A foundation policy for quadrotor control"
 readme = "README.md"
 authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]
 license = {text = "MIT"}
@@ -23,8 +23,8 @@ examples = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["foundation_model"]
+packages = ["foundation_policy"]
 include = [
-    "foundation_model/blob/*.h5",
-    "foundation_model/examples/*",
+    "foundation_policy/blob/*.h5",
+    "foundation_policy/examples/*",
 ]

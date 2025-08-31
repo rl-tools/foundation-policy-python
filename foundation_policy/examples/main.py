@@ -1,4 +1,4 @@
-from foundation_model import QuadrotorPolicy
+from foundation_policy import QuadrotorPolicy
 import numpy as np
 from scipy.spatial.transform import Rotation as R
 import l2f

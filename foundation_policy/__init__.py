@@ -183,4 +183,4 @@ def load(file_path):
 
 
 def QuadrotorPolicy():
-    return load(importlib_resources.files("foundation_model").joinpath("blob", "checkpoint.h5"))
+    return load(importlib_resources.files("foundation_policy").joinpath("blob", "checkpoint.h5"))
