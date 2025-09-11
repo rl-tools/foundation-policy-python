@@ -184,3 +184,6 @@ def load(file_path):
 
 def QuadrotorPolicy():
     return load(importlib_resources.files("foundation_policy").joinpath("blob", "checkpoint.h5"))
+
+
+Raptor = QuadrotorPolicy
