@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "foundation-policy"
-version = "1.0.1"
+version = "1.0.2"
 description = "A foundation policy for quadrotor control"
 readme = "README.md"
 authors = [{name = "Jonas Eschmann", email = "jonas.eschmann@gmail.com"}]
@@ -28,3 +28,6 @@ include = [
     "foundation_policy/blob/*.h5",
     "foundation_policy/examples/*",
 ]
+
+[project.urls]
+Homepage = "https://github.com/rl-tools/foundation-policy"
